@@ -5,4 +5,5 @@ body {
 h1 {
   font-family: monospace;
   background-color: aqua;
+  text-align: center;
 }
