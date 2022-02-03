@@ -5,5 +5,6 @@ var words = [
   "NINE INCH NAILS",
   "MASSIVE ATTACK",
   "ULVER",
-  "ALICE IN CHAINS"
+  "ALICE IN CHAINS",
+  "GOJIRA"
 ]
