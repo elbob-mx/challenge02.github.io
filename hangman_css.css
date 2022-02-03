@@ -3,11 +3,16 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 5rem;
   text-align: center;
+  letter-spacing: 8px;
+  color: black;
 }
 
 h3 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 2rem;
   text-align: center;
+  color: beige;
 }
