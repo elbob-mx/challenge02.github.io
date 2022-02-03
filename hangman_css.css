@@ -4,6 +4,10 @@ body {
 
 h1 {
   font-family: monospace;
-  background-color: aqua;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Rock Salt', cursive;
   text-align: center;
 }
