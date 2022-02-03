@@ -1,9 +1,9 @@
 body {
-  background-color: #31662F;
+  background-color: #31662f;
 }
 
 h1 {
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: "Stint Ultra Condensed", cursive;
   font-size: 5rem;
   text-align: center;
   letter-spacing: 8px;
@@ -11,7 +11,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'Annie Use Your Telescope', cursive;
+  font-family: "Annie Use Your Telescope", cursive;
   font-size: 2rem;
   text-align: center;
   color: beige;
