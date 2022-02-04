@@ -1,13 +1,26 @@
 body {
-  background-color: #31662f;
+  background-image: url('https://www.spoonflower.com/Blackboard_Background.jpg');
+  background-size: 100vh;
+  background-size: 100%;
+  /* background-color: #31662f; */
 }
 
 h1 {
   font-family: "Stint Ultra Condensed", cursive;
   font-size: 5rem;
   text-align: center;
-  letter-spacing: 8px;
-  color: black;
+  letter-spacing: 20px;
+  color: beige;
+  margin: 30px 0 10px 0;
+  padding-bottom: 0;
+}
+
+h4 {
+  font-family: monospace;
+  text-align: center;
+  color: beige;
+  letter-spacing: 4px;
+  margin: 0 0 50px 0;
 }
 
 h3 {
