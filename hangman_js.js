@@ -1,3 +1,5 @@
+// variables ----------->
+
 var words = [
   "HEMINGWAY",
   "HOSSEINI",
@@ -18,8 +20,17 @@ var words = [
   "HUXLEY",
   "RAND"
 ]
+console.log(words[10]);
 
-console.log(words[15]);
+// funciones ----------->
+
+function getRandomWord() {
+  var randomWord = words[Math.floor(Math.random() * words.length)];
+  return randomWord;
+}
+
+var random = generateRandom(min, max);
+showRandom(random);
 
 /* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,

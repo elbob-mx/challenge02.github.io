@@ -1,5 +1,5 @@
 body, html {
-  /* background-image: url('https://www.spoonflower.com/Blackboard_Background.jpg'); */
+  background-image: url('https://www.spoonflower.com/Blackboard_Background.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,7 +8,7 @@ body, html {
 }
 
 h1 {
-  font-family: "Stint Ultra Condensed", cursive;
+  font-family: 'Stint Ultra Expanded', cursive;
   font-size: 4rem;
   text-align: center;
   letter-spacing: 20px;
@@ -19,9 +19,9 @@ h1 {
 }
 
 h4 {
-  font-family: monospace;
+  font-family: 'Stint Ultra Expanded', cursive;
   text-align: center;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   margin: 2px 0 0 0;
   width: auto;
   letter-spacing: 1.5px;
@@ -42,10 +42,11 @@ p {
 #iniciar-juego {
   display: flex;
   width: auto;
-  margin: 30px auto;
-  background: none;
+  margin: 100px auto;
+  background: gray;
   border: none;
-  font-family: monospace;
+  border-radius: 7px;
+  font-family: 'Stint Ultra Expanded', cursive;
   font-weight: 500;
   font-size: 1rem;
   justify-content: center;
@@ -59,16 +60,29 @@ p {
 #iniciar-juego:hover {
   display: flex;
   width: auto;
-  margin: 30px auto;
-  background: none;
+  margin: 100px auto;
+  background: #5f5f5f;
   border: none;
-  font-family: monospace;
-  font-weight: 500;
+  border-radius: 7px;
+  font-family: 'Stint Ultra Expanded', cursive;
+  font-weight: 600;
   font-size: 1rem;
   justify-content: center;
   align-items: center;
   align-content: center;
   white-space: nowrap;
   padding: 10px;
-  color: orange;
+  color: yellow;
+}
+
+.input{
+  display: flex;
+  width: auto;
+  margin: 55px auto;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 0.7rem;
+  justify-content: center;
+  white-space: nowrap;
+  color: whitesmoke;
 }
