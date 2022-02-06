@@ -19,9 +19,9 @@ var words = [
   "RAND"
 ]
 
-console.log(words);
+console.log(words[15]);
 
-/* buscar y declarar random en el arreglo words,
+/* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,
 si esta, se imprime
 definir lugar de la letra,

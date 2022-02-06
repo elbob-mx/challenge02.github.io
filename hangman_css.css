@@ -1,35 +1,74 @@
-body {
-  background-image: url('https://www.spoonflower.com/Blackboard_Background.jpg');
-  background-size: 100vh;
-  background-size: 100%;
-  /* background-color: #31662f; */
+body, html {
+  /* background-image: url('https://www.spoonflower.com/Blackboard_Background.jpg'); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #31662f;
 }
 
 h1 {
   font-family: "Stint Ultra Condensed", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   letter-spacing: 20px;
   color: whitesmoke;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 0 0;
   padding-bottom: 0;
+  width: auto;
 }
 
 h4 {
   font-family: monospace;
   text-align: center;
   color: whitesmoke;
-  letter-spacing: 4px;
-  margin: 0 0 50px 0;
+  margin: 2px 0 0 0;
+  width: auto;
+  letter-spacing: 1.5px;
 }
 
 p {
   font-family: "Annie Use Your Telescope", cursive;
   font-size: 2rem;
   text-align: center;
-  color: beige;
+  color: whitesmoke;
 }
 
-#"iniciar-juego" {
+.head{
+  width: auto;
+  margin: auto;
+}
+
+#iniciar-juego {
+  display: flex;
+  width: auto;
+  margin: 30px auto;
+  background: none;
+  border: none;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 1rem;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px;
+  color: yellow;
+}
+
+#iniciar-juego:hover {
+  display: flex;
+  width: auto;
+  margin: 30px auto;
+  background: none;
+  border: none;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px;
+  color: orange;
 }
