@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&family=Stint+Ultra+Expanded&family=Zilla+Slab+Highlight&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="hangman_css.css" />
     <title>El Ahorcado</title>
   </head>
   <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="class" ="rounded shadow p-2 bg-white">EL AHORCADO</h1>
+        <h4>escribe por un escritor...</h4>
+      </div>
 
-  <div class="container">
+      <form id="add-Words" label="form">
+        <label for="addWords">sí deseas, agrega una palabra:</label>
+        <input type="text" id="add-word" />
 
-    <div class="head">
-      <h1 class=class="rounded shadow p-2 bg-white">EL AHORCADO</h1>
-      <h4>escribe por un escritor</h4>
+        <button class="button" id="agregar-palabra">agregar palabra</button>
+      </form>
+
+      <button class="button" id="iniciar-juego">iniciar juego</button>
     </div>
-
-    <div class="input">
-      <label for="add-word">Sí deseas, agrega una palabra:</label>
-      <input type="text" id="add-word" name="add-word"><br><br>
-    </div>
-
-   <button class="button" id="iniciar-juego">iniciar juego</button>
-
-  </div>
-
   </body>
 </html>
