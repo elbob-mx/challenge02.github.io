@@ -19,18 +19,14 @@ var words = [
   "ASIMOV",
   "HUXLEY",
   "RAND"
-]
-console.log(words[10]);
+];
+console.log(words.length);
+console.log(words[0]);
 
 // funciones ----------->
 
-function getRandomWord() {
-  var randomWord = words[Math.floor(Math.random() * words.length)];
-  return randomWord;
-}
-
-var random = generateRandom(min, max);
-showRandom(random);
+const getRandomWord = words[Math.floor(Math.random() * words.length)];
+let randomWord = getRandomWord.split("");
 
 /* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,
