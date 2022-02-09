@@ -23,11 +23,21 @@ var authorsArr = [
   "RAND",
   "MOORE",
   "LAGARDE",
+  "BUTLER",
+  "ATWOOD",
+  "BARDUGO",
+  "HURLEY",
+  "MONTERO",
+  "CLARKE",
+  "HOBB",
+  "JEMISIN",
+  "EXUPERY",
+  "PEPO"
 ];
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
-var addWord = document.querySelector("#addWordsBtn");
+var addWord = document.querySelector("#addWords");
 addWordsBtn.addEventListener("click", function (event) {
   event.preventDefault()
   addWordMsg();
@@ -38,7 +48,7 @@ addWordsBtn.addEventListener("click", function (event) {
 
 function addUserWord() { 
   authorsArr.push(document.getElementById("agregarPalabra").value);
-  alert("word included"); 
+  alert("word included");
   console.log(authorsArr); // confirmación
 } 
 
