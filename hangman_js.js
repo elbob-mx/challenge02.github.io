@@ -32,7 +32,6 @@ var authorsArr = [
   "HOBB",
   "JEMISIN",
   "EXUPERY",
-  "PEPO"
 ];
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
