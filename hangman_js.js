@@ -36,20 +36,20 @@ var authorsArr = [
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
-var addWord = document.querySelector("#addWords");
-addWordsBtn.addEventListener("click", function (event) {
-  event.preventDefault()
-  addWordMsg();
+// var addWord = document.querySelector("#addWords");
+// addWordsBtn.addEventListener("click", function (event) {
+//   event.preventDefault()
+//   addWordMsg(alert("success"));
+// });
 
-});
+var btnAdd = document.querySelector("#addWordsBtn");
+var input = document.querySelector("#addWords");
 
 // funciones ----------->
 
-function addUserWord() { 
-  authorsArr.push(document.getElementById("agregarPalabra").value);
-  alert("word included");
-  console.log(authorsArr); // confirmación
-} 
+function addUserWord () {
+  input.push();
+}
 
 const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
