@@ -27,10 +27,17 @@ var authorsArr = [
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
+var addWord = document.querySelector("#addWordsBtn");
+addWordsBtn.addEventListener("click", function (event) {
+  event.preventDefault()
+  addWordMsg();
+
+});
+
 // funciones ----------->
 
 function addUserWord() { 
-  authorsArr.push("hangman_js.js".getElementById("agregarPalabra").value);
+  authorsArr.push(document.getElementById("agregarPalabra").value);
   alert("word included"); 
   console.log(authorsArr); // confirmación
 } 
@@ -40,6 +47,7 @@ let randomWord = getRandomWord.split("");
 
 console.log(getRandomWord);
 console.log(randomWord);
+
 
 /* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,
