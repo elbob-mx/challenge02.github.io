@@ -1,4 +1,4 @@
-// variables ----------->
+// array ----------->
 
 var authorsArr = [
   "HEMINGWAY",
@@ -36,27 +36,24 @@ var authorsArr = [
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
-// var addWord = document.querySelector("#addWords");
-// addWordsBtn.addEventListener("click", function (event) {
-//   event.preventDefault()
-//   addWordMsg(alert("success"));
-// });
+// variables -------->
 
-var btnAdd = document.querySelector("#addWordsBtn");
-var input = document.querySelector("#addWords");
+
 
 // funciones ----------->
 
-function addUserWord () {
-  input.push();
-}
-
-const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
+const
+getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
 console.log(getRandomWord);
 console.log(randomWord);
 
+
+
+
+
+// world domination plan ---------------->
 
 /* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,
