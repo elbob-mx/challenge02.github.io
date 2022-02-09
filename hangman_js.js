@@ -1,6 +1,6 @@
 // variables ----------->
 
-var words = [
+var authorsArr = [
   "HEMINGWAY",
   "BEAUVOIR",
   "HOSSEINI",
@@ -24,15 +24,22 @@ var words = [
   "MOORE",
   "LAGARDE",
 ];
-console.log(words.length);
-console.log(words[0]);
+console.log(authorsArr.length);
+console.log(authorsArr[0]);
 
 // funciones ----------->
 
-const getRandomWord = words[Math.floor(Math.random() * words.length)];
+function addUserWord() { 
+  authorsArr.push("hangman_js.js".getElementById("agregarPalabra").value);
+  alert("word included"); 
+  console.log(authorsArr); // confirmación
+} 
+
+const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
-
+console.log(getRandomWord);
+console.log(randomWord);
 
 /* buscar y declarar random en el arreglo 'words',
 buscar letra dentro de la palabra,

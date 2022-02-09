@@ -61,7 +61,7 @@ label {
   /* font-size: 2vw; */
 }
 
-#add-word {
+#addWords {
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ label {
   white-space: nowrap;
 }
 
-#agregar-palabra {
+#addWordsBtn {
   display: flex;
   width: auto;
   margin: 20px auto;
@@ -94,7 +94,7 @@ label {
   color: #d3d300;
 }
 
-#agregar-palabra:hover {
+#addWordsBtn:hover {
   display: flex;
   width: auto;
   margin: 20px auto;
@@ -112,7 +112,7 @@ label {
   color: yellow;
 }
 
-#iniciar-juego {
+#startGame {
   display: flex;
   width: auto;
   margin: 200px auto;
@@ -130,7 +130,7 @@ label {
   color: #d3d300;
 }
 
-#iniciar-juego:hover {
+#startGame:hover {
   display: flex;
   width: auto;
   margin: 200px auto;
