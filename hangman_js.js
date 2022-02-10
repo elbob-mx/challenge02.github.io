@@ -48,7 +48,11 @@ console.log(randomWord);
 var author = document.getElementById('randomWord');
 
 
+<<<<<<< HEAD
 // FUNCIONES --------------------------->
+=======
+// funciones ----------->
+>>>>>>> d799708b92076eea0a3d60a41d5dd757ad3657d0
 
 function addTo() { 
   authorsArr.push(document.getElementById("addWords").value); 
@@ -59,7 +63,12 @@ function addTo() {
 
 function createWordLetters() {
   var newDiv = document.createElement("lettersDiv");
+<<<<<<< HEAD
   var newContent = document.createTextNode("Comencemos");
+=======
+  var newContent = document.createTextNode("Shall we start?");
+	//agregue el nodo de texto al div recién creado
+>>>>>>> d799708b92076eea0a3d60a41d5dd757ad3657d0
   newDiv.appendChild(newContent); 
 }
 
@@ -68,8 +77,11 @@ function spellRandomWord() {
     authorList.setAtribute("class", "thisAuthor");
     fruta.appendChild(authorList);
 }
+<<<<<<< HEAD
 
 // botón iniciar juego ------->
+=======
+>>>>>>> d799708b92076eea0a3d60a41d5dd757ad3657d0
 
 
 
