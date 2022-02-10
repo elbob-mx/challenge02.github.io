@@ -72,7 +72,7 @@ function spellRandomWord() {
 
 // frases ganadoras -------->
 
-if (/* ACIERTA */) {
+if (/* ACIERTA */) { alert
   else if (
     getRandomWord == [0] {
     document.print("El secreto de la sabiduría, del poder y del conocimiento es la humildad");
