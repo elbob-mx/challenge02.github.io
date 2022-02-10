@@ -38,17 +38,19 @@ console.log(authorsArr[0]);
 
 // variables -------->
 
-
-
-// funciones ----------->
-
 const
-getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
+  getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
 console.log(getRandomWord);
 console.log(randomWord);
 
+// funciones ----------->
+
+function addTo() { 
+  authorsArr.push(document.getElementById("addWords").value); 
+  console.log(authorsArr); //confirmación
+} 
 
 
 
