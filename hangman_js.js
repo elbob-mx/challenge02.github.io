@@ -1,4 +1,4 @@
-// array ----------->
+// ARRAY --------------------------->
 
 var authorsArr = [
   "HEMINGWAY",
@@ -36,22 +36,40 @@ var authorsArr = [
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
-// variables -------->
+// VARIABLES --------------------------->
 
-const
-  getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
+const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
 console.log(getRandomWord);
 console.log(randomWord);
 
-// funciones ----------->
+
+var author = document.getElementById('randomWord');
+
+
+// FUNCIONES --------------------------->
 
 function addTo() { 
   authorsArr.push(document.getElementById("addWords").value); 
   console.log(authorsArr); //confirmación
 } 
 
+// crear espacios para letras ------>
+
+function createWordLetters() {
+  var newDiv = document.createElement("lettersDiv");
+  var newContent = document.createTextNode("Comencemos");
+  newDiv.appendChild(newContent); 
+}
+
+function spellRandomWord() {
+  var authorList = document.createElement('li');
+    authorList.setAtribute("class", "thisAuthor");
+    fruta.appendChild(authorList);
+}
+
+// botón iniciar juego ------->
 
 
 
