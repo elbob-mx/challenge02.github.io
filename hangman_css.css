@@ -20,17 +20,15 @@ h1 {
   width: auto;
 }
 
-#secondary-h1 {
+h3 {
   font-family: "Stint Ultra Expanded", cursive;
   font-size: 2.75vw;
-  text-align: left;
+  text-align: center;
   letter-spacing: 20px;
   color: whitesmoke;
   margin: 30px 0 0 0;
   padding-bottom: 0;
-  padding-left: 30px;
   width: auto;
-  
 }
 
 h4 {
@@ -41,6 +39,17 @@ h4 {
   margin: 2px 0 20px 0;
   width: auto;
   letter-spacing: 1.5px;
+}
+
+h5 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 0.5vw;
+  text-align: center;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin: 15px 0 0 0;
+  padding-bottom: 0;
+  width: auto;
 }
 
 p {
@@ -59,6 +68,16 @@ p {
   justify-content: center;
   /* width: auto; */
   margin: 55px auto;
+}
+
+#gameSlot{
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15%;
 }
 
 label {
@@ -159,6 +178,42 @@ label {
   white-space: nowrap;
   padding: 13px 13px 13px 13px;
   color: yellow;
+}
+
+#resetGame {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid orangered 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px 10px 10px 10px;
+  color: orangered;
+}
+
+#resetGame:hover {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid orange 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 13px 13px 13px 13px;
+  color: orange;
 }
 
 footer {
