@@ -1,6 +1,6 @@
 body,
 html {
-  background-image: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg"); 
+  background-image: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  font-family: 'East Sea Dokdo', cursive;
+  font-family: "East Sea Dokdo", cursive;
   font-size: 6.5vw;
   text-align: center;
   color: whitesmoke;
