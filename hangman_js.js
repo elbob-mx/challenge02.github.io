@@ -1,4 +1,4 @@
-// ARRAY --------------------------->
+// ARRAY de autores --------------------------->
 
 var authorsArr = [
   "HEMINGWAY",
@@ -34,6 +34,7 @@ console.log(authorsArr[0]);
 
 // VARIABLES --------------------------->
 
+// obtener palabra random del array y separar por letra
 const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
@@ -43,8 +44,17 @@ console.log(randomWord);
 
 var author = document.getElementById('randomWord');
 
+// crear espacios por letra de la palabra randome seleccionada
+var answerArr = [];
+for (var i = 0; i < randomWord.length; i++) {
+  answerArr[i] = "_";
+}
+
+var missingLetters = randomWord.length;
 
 // FUNCIONES --------------------------->
+
+// agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos
 
 function addTo() {
   // authorsArr.push(document.getElementById("addWords").value);
@@ -61,21 +71,15 @@ function addTo() {
   console.log(regexNumbers);
 }
 
+
+
 // crear espacios para letras ------>
 
-function createWordLetters() {
-  var newDiv = document.createElement("lettersDiv");
-  var newContent = document.createTextNode("Comencemos");
-  newDiv.appendChild(newContent);
-}
 
-function spellRandomWord() {
-  var authorList = document.createElement('li');
-  authorList.setAtribute("class", "thisAuthor");
-  authorList.appendChild(authorList);
-}
 
 // botón iniciar juego ------->
+
+
 
 // frases ganadoras -------->
 
