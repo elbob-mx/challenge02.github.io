@@ -1,5 +1,6 @@
 // ARRAY de autores --------------------------->
 
+
 var authorsArr = [
   "HEMINGWAY",
   "BEAUVOIR",
@@ -32,7 +33,9 @@ var authorsArr = [
 console.log(authorsArr.length);
 console.log(authorsArr[0]);
 
+
 // VARIABLES --------------------------->
+
 
 // obtener palabra random del array y separar por letra
 const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
@@ -41,10 +44,12 @@ let randomWord = getRandomWord.split("");
 console.log(getRandomWord);
 console.log(randomWord);
 
-
 var author = document.getElementById('randomWord');
 
+
 // crear espacios por letra de la palabra randome seleccionada
+
+
 var answerArr = [];
 for (var i = 0; i < randomWord.length; i++) {
   answerArr[i] = "_";
@@ -52,9 +57,11 @@ for (var i = 0; i < randomWord.length; i++) {
 
 var missingLetters = randomWord.length;
 
+
 // FUNCIONES --------------------------->
 
 // agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos
+
 
 function addTo() {
   // authorsArr.push(document.getElementById("addWords").value);
@@ -70,7 +77,6 @@ function addTo() {
   console.log(regexAuthor);
   console.log(regexNumbers);
 }
-
 
 
 // crear espacios para letras ------>
