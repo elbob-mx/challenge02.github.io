@@ -20,4 +20,4 @@ Considering the letters, the spaces are created, where the user must guess the c
 If the user manages to guess the word, a phrase from the given author will appear. If it fails, it will be alerted from it and will be able to restart.
 
 Thanks to all those involved and thanks to Alura LatAm for the opportunity.
-Thank you Laura for listening to me in my moments of frustration and success!
+Thank you Laura for listening to me in my moments of frustration and success!!
