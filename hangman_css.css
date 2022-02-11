@@ -43,11 +43,11 @@ h4 {
 
 h5 {
   font-family: "Stint Ultra Expanded", cursive;
-  font-size: 0.5vw;
+  font-size: 0.6rem;
   text-align: center;
   letter-spacing: 5px;
   color: whitesmoke;
-  margin: 15px 0 0 0;
+  margin: 1px 0 0 0;
   padding-bottom: 0;
   width: auto;
 }
