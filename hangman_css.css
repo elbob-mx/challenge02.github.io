@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   background-image: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg");
@@ -52,11 +56,30 @@ h5 {
   width: auto;
 }
 
+#used-letter {
+  font-family: "Port Lligat Slab", serif;
+  font-size: 16px;
+  text-align: center;
+  color: orangered;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#used-letter p{
+  margin: 0;
+}
+
+#used-letter.show{
+  transform: translateY(-50%);
+}
+
 p {
   font-family: "East Sea Dokdo", cursive;
   font-size: 6.5vw;
   text-align: center;
   color: whitesmoke;
+  margin: auto;
 }
 
 .title {
@@ -71,13 +94,85 @@ p {
 }
 
 #gameSlot {
-  background-size: cover;
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+
+.wrong-letters-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  text-align: right;
+}
+
+.wrong-letters-container p {
+  margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
+  font-size: 21px;
+}
+
+.authorToGuess {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.letter {
+  border-bottom: 2px solid whitesmoke;
+  display: inline-flex;
+  font-size: 26px;
   align-items: center;
-  margin: 15%;
+  justify-content: center;
+  margin: 0 3px;
+  height: 30px;
+  width: 15px;
+}
+
+.popup-container {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+}
+
+.popup {
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button{
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.popup button:active{
+  transform: scale(0.98);
+}
+
+.popup button:focus{
+  outline: 0;
 }
 
 label {
@@ -106,6 +201,7 @@ label {
   /* font-size: 2vw; */
   justify-content: center;
   white-space: nowrap;
+  outline: 0;
 }
 
 #addWordsBtn {
@@ -129,7 +225,7 @@ label {
 #addWordsBtn:hover {
   display: flex;
   width: auto;
-  margin: 20px auto;
+  margin: 21px auto;
   background: none;
   border: solid yellow 2pt;
   border-radius: 7px;
@@ -183,7 +279,7 @@ label {
 #resetGame {
   display: flex;
   width: auto;
-  margin: 200px auto;
+  margin: auto;
   background: none;
   border: solid orangered 2pt;
   border-radius: 7px;
@@ -201,7 +297,8 @@ label {
 #resetGame:hover {
   display: flex;
   width: auto;
-  margin: 200px auto;
+  margin: 9px auto;
+  bottom: 30%;
   background: none;
   border: solid orange 2pt;
   border-radius: 7px;
@@ -227,7 +324,6 @@ footer {
   padding-bottom: 15px;
   justify-content: center;
 }
-
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 }
