@@ -70,7 +70,7 @@ p {
   margin: 55px auto;
 }
 
-#gameSlot{
+#gameSlot {
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -227,6 +227,7 @@ footer {
   padding-bottom: 15px;
   justify-content: center;
 }
+
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 }

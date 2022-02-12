@@ -77,7 +77,11 @@ function addTo() {
   console.log(regexAuthor);
   console.log(regexNumbers);
 }
-
+// letras por adivinar
+while (missingLetters > 0) {
+//progreso
+alert.apply(answerArr.join("-"));
+}
 
 // crear espacios para letras ------>
 

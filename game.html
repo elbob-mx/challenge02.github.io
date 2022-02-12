@@ -4,57 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Port+Lligat+Slab&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Port+Lligat+Slab&family=Stint+Ultra+Expanded&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="hangman_css.css" />
-
     <title>El Ahorcado</title>
   </head>
+
   <body>
-    <!-- bkg music -->
-<!-- 
-    <script>
-      /*
-      Background music script
-      By JavaScript Kit (http://javascriptkit.com)
-      Over 400+ free scripts here!
-      */
-      
-      //specify FULL path to midi
-      var musicsrc="https://soundcloud.com/user-572185045/09_ambceronueve_c3_41255b?si=eb516e6334db42739fb354bc27245fbc&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-      if (navigator.appName=="Google Chrome")
-      document.write('<bgsound src='+'"'+musicsrc+'"'+' loop="infinite">')
-      else 
-      document.write('<embed src=\"'+musicsrc+'\" hidden="true" border="0" width="20" height="20" autostart="true" loop="true">')
-      </script> -->
-
-    <!-- bkg music -->
-
     <div class="container">
       <div class="title">
         <h3 font-size: 25px;>EL AHORCADO</h3>
         <h5>escribe por un escritor...</h5>
       </div>
-
-<!-- input agregar palabra -->
-
-<container id="gameSlot">
-
-</container>
-<!-- boton reset juego -->
-
-      <button onclick="location.href='index.html'"
-      type="button" class="button" id="resetGame">reiniciar juego</button>
     </div>
 
-  </div>
-  <div class="void">
-      
-  </div>
-  <footer>Lección Alura Oracle ONE / <i><b>dev: Roberto Raúl Gutiérrez Olivas</b></i> / 2022</footer>
+    <!-- contenedor del juego -->
 
-  <script defer type="text/javascript" src="hangman_js.js"></script>
+    <div id="gameSlot">
+      <!-- contenedor de mono -->
 
+      <!-- contenedor de mono -->
+
+      <div class="wrong-letters-container">
+        <div id="wrong-letters"></div>
+      </div>
+
+      <div class="authorToGuess" id="authorGuess"></div>
+    </div>
+
+    <!-- boton reset juego -->
+
+    <button
+      onclick="location.href='index.html'"
+      type="button"
+      class="button"
+      id="resetGame"
+    >
+      reiniciar juego
+    </button>
+
+    <div class="void"></div>
+
+    <!-- footer -->
+
+    <footer>
+      Lección Alura Oracle ONE /
+      <i><b>dev: Roberto Raúl Gutiérrez Olivas</b></i> / 2022
+    </footer>
+
+    <script defer type="text/javascript" src="hangman_js.js"></script>
   </body>
 </html>
