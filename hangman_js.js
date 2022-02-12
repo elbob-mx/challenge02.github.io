@@ -58,7 +58,7 @@ for (var i = 0; i < randomWord.length; i++) {
 var missingLetters = randomWord.length;
 
 
-// FUNCIONES --------------------------->
+// FUNCIONES ---------------------------> <=
 
 // agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos
 
@@ -199,7 +199,7 @@ alert.apply(answerArr.join("-"));
 //     document.print("La magia es meramente comunicación y conductas.");
 //   }
 //   else if (
-//     getRandomWord == authorsArr[25] {
+//     getRandomWord == authorsArr[26] {
 //     document.print("Dales todo lo que tienes, pero no les enseñes todo lo que sabes.");
 //   }
 // }
