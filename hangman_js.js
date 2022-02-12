@@ -44,7 +44,15 @@ let randomWord = getRandomWord.split("");
 console.log(getRandomWord);
 console.log(randomWord);
 
-var author = document.getElementById('randomWord');
+const wrongLetters = document.getElementById("wrong-letters");
+const popup = document.getElementById("popup-container");
+const notif = document.getElementById("warning-letter");
+const finalPhrase = document.getElementById("frase-final");
+const letrasAciertos= [];
+const letrasErrores = [];
+
+// const loadBodyparts
+
 
 
 // crear espacios por letra de la palabra randome seleccionada
@@ -78,9 +86,21 @@ function addTo() {
   console.log(regexNumbers);
 }
 // letras por adivinar
-while (missingLetters > 0) {
-//progreso
-alert.apply(answerArr.join("-"));
+
+function displayAuthor() {
+  randomWord.map(
+    letter =>
+  <span class="letter">
+  ${letrasAciertos.includes(letter) ? letter : ""}
+  </span>  
+  )
+.join("");
+
+const innerWord = getRandomWord.innerText.replace(/\n/g,"");
+
+if(innerWord === randomWord) {
+  finalPhrase.innerText = /*"frase autor"*/
+}
 }
 
 // crear espacios para letras ------>
