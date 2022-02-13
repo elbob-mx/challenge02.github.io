@@ -35,24 +35,48 @@
   </header>
 
   <main>
+<!-- instrucciones -->
     <div class="explanation-container">
-      <p id="threshold" class="t-center">
-        You can only have 6 mistakes to guess the word. Good luck!
+      <p id="instructions"><b>
+        Bienvenido.</b><br>Tienes 5 intentos,¡suerte!
       </p>
     </div>
+
+<!-- contenedor juego -->
+    <!-- contenedor principal -->
     <div id="manContainer" class="man-container"></div>
-    <div
-      id="guessContainer"
-      class="guess-container flex-row flex-center mt-2"
-    ></div>
-    <div id="responseContainer" class="response-container t-center"></div>
-    <div
-      id="letterGuessedContainer"
-      class="letters-used-container flex-row flex-center"
-    ></div>
-    <div class="reset-container flex-row flex-center">
-      <button id="reset">Reset!</button>
+
+    <!-- input agregar palabra -->
+    <div class="inputUserWord">
+      <h3>si lo necesitas, agrega una palabra</h3>
+      <input type="text" placeholder="Escribe aquí..." id="addWordInput">
+      <button>agregar</button>
+    </div><br>
+    <!-- mono -->
+
+    <!-- letras usadas error -->
+
+    <!-- letras por adivinar encontradas -->
+    <div class="void"></div>
+    <br>
+
+    <!-- boton reiniciar -->
+    
+    <div class="resetBtnArea">
+      <button id="reset">reiniciar</button>
     </div>
+    <footer>
+      Lección Alura Oracle ONE /
+      <i><b>dev: Roberto Raúl Gutiérrez Olivas</b></i> / 2022
+    </footer>
   </main>
-  <script defer type="text/javascript" src="hangman_js.js"></script>
-</body>
+  
+  <!-- footer -->
+
+
+    <!-- js script area -->  
+    <script defer type="text/javascript" src="hangman_js.js"></script>
+    <!-- js script area -->
+  </body>
+
+

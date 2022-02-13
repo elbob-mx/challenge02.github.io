@@ -1,24 +1,92 @@
-html {
+html, body {
   background-color: black;
-  background: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg") no-repeat center center fixed; 
+  background: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 100%;
+  margin: 0;
+  overflow-y: visible;
 }
 
 h1 {
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: "Stint Ultra Expanded", cursive;
   color: whitesmoke;
   text-align: center;
-  font-size: 5vh;
-  margin: 20px auto;
+  font-size: 6.5vh;
+  margin: 20px auto 8px;
 }
 
 h2 {
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: "Stint Ultra Expanded", cursive;
   color: whitesmoke;
   text-align: center;
+  font-size: 3vh;
+  margin: 2px auto 40px;
+}
+
+h3{
+  font-family: "Port Lligat Slab", serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5vh;
+  margin: 20px auto 5px;
+}
+
+.explanation-container {
+  margin: 10px 0 35px 0;
+}
+
+#instructions {
+  font-family: "Port Lligat Slab", serif;
+  text-align: center;
   font-size: 2vh;
-  margin: 2px auto
+  color: lightgoldenrodyellow;
+}
+
+.inputUserWord {
+  text-align:center
+}
+
+#addWordInput {
+  font-family: "Port Lligat Slab", serif;
+  outline: none;
+  justify-content: center;
+}
+
+/* #addWordInput:active{
+  border: none;
+  border-color: transparent;
+} */
+
+.void {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 200px 100px 200px 100px;
+  margin: 20px 20px 20px 20px;
+  background-color: black;
+  opacity: 20%;
+}
+
+.resetBtnArea {
+  display: flex;
+  justify-content: center;
+}
+
+#reset {
+  position: static;
+  justify-content: center;
+  bottom: 20%;
+}
+
+footer {
+  position:static;
+  font-family: "Port Lligat Slab", serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 1vh;
+  color: gold;
+  bottom: 10%;
 }
