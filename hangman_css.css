@@ -8,22 +8,25 @@ html, body {
   background-size: cover;
   min-height: 100%;
   margin: 0;
-  overflow-y: visible;
+  /* overflow: hidden; */
 }
 
 h1 {
   font-family: "Stint Ultra Expanded", cursive;
-  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: gold;
   text-align: center;
-  font-size: 6.5vh;
-  margin: 20px auto 8px;
+  font-size: 6vh;
+  margin: 20px auto 2px;
 }
 
 h2 {
   font-family: "Stint Ultra Expanded", cursive;
+  font-weight: 500;
   color: whitesmoke;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2.1vh;
   margin: 2px auto 40px;
 }
 
@@ -56,37 +59,77 @@ h3{
   justify-content: center;
 }
 
-/* #addWordInput:active{
-  border: none;
-  border-color: transparent;
-} */
+#addWordBtn {
+  font-family: "Port Lligat Slab", serif;
+  color: black;
+	text-decoration: none;
+	background: goldenrod;
+	padding: 3px;
+  width: 70px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
 
-.void {
+#addWordBtn:hover {
+  font-family: "Port Lligat Slab", serif;
+  font-weight: bolder;
+  color: black;
+  text-transform: bold;
+  background: gold;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+
+.container {
   border: 2px solid black;
-  border-radius: 15px;
-  padding: 200px 100px 200px 100px;
-  margin: 20px 20px 20px 20px;
+  border-radius: 30px;
+  padding: 80px 100px 80px 100px;
+  margin: 20px 20px 8px 20px;
   background-color: black;
   opacity: 20%;
 }
 
 .resetBtnArea {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin: 8px 20px 30px auto;
 }
 
-#reset {
-  position: static;
-  justify-content: center;
-  bottom: 20%;
+#reset-button {
+	color: black;
+  font-family: "Port Lligat Slab", serif;
+	text-decoration: none;
+	background: tomato;
+	padding: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+#reset-button:hover {
+  color: black;
+  background: orangered;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: bolder;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }
 
 footer {
-  position:static;
   font-family: "Port Lligat Slab", serif;
-  justify-content: center;
+  color: goldenrod;
   text-align: center;
-  font-size: 1vh;
-  color: gold;
-  bottom: 10%;
-}
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+} 
