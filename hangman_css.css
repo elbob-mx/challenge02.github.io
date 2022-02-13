@@ -84,12 +84,42 @@ h3{
 	transition: all 0.4s ease 0s;
 }
 
+#startGameBtn {
+  display: absolute;
+  justify-content: center;
+  font-family: "Port Lligat Slab", serif;
+  color: black;
+	text-decoration: none;
+	background: gold;
+	padding: 6px;
+  width: 110px;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.4s ease 0s;
+  margin: 40px 0 10px 0;
+}
+
+#startGameBtn:hover {
+  display: absolute;
+  justify-content: center;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: bolder;
+  color: black;
+  text-transform: bold;
+  background: whitesmoke;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+  margin: 40px 0 10px 0;
+}
+
 
 .container {
   border: 2px solid black;
   border-radius: 30px;
   padding: 80px 100px 80px 100px;
-  margin: 20px 20px 8px 20px;
+  margin: 20px 20px 15px 20px;
   background-color: black;
   opacity: 20%;
 }
