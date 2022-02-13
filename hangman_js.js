@@ -31,16 +31,17 @@ console.log(authorArr);
 
 // ====================================================================================== //
 
-var btnIniciar        = document.querySelector("#iniciar-juego");
-var inputPalabra      = document.querySelector("#input-nueva-palabra");
-var btnAgregarPalabra = document.querySelector("#nueva-palabra");
-var btnReiniciar      = document.querySelector("#reiniciar-juego")
+// VARIABLES ======================>
+
+var startGameBtn = document.querySelector("#startGameBtn");
+var addWordInput = document.querySelector("#addWordInput");
+var addWordBtn = document.querySelector("#addWordBtn");
+var resetButton = document.querySelector("#reset-button");
 
 
-
-var juegoIniciado = false;
-var palabraSorteada;
-var indices = [];
+var initGame = false;
+var randomAuthor;
+var indexes = [];
 var arrayPalabra;
 arrayLetraIngresada = [];
 arrayLetrasCorrectas = [];
@@ -49,9 +50,9 @@ let letrasUnicas = [];
 //--------funcion para generar un array sin letras repetidas
 //--------que sera usado para verificar el ganador
 function cribarLetrasRepetidas(){
-    for (i=0;i<palabraSorteada.length;i++){
-        if(!letrasUnicas.includes(palabraSorteada[i])){
-            letrasUnicas.push(palabraSorteada[i])
+    for (i=0;i<randomAuthor.length;i++){
+        if(!letrasUnicas.includes(randomAuthor[i])){
+            letrasUnicas.push(randomAuthor[i])
         }
     }
 }
@@ -59,9 +60,9 @@ function cribarLetrasRepetidas(){
 //--------luego elimina esa palabra del array para que no repita
 function sortearPalabra(){
     var numeroAleatorio = Math.floor(Math.random()*palabrasSecretas.length);
-    palabraSorteada = palabrasSecretas[numeroAleatorio];
+    randomAuthor = palabrasSecretas[numeroAleatorio];
     palabrasSecretas.splice(numeroAleatorio,1);
-    return palabraSorteada;
+    return randomAuthor;
 }
 //--------crea un array para ser usado como referencia para el juego
 function crearArrayPalabra(palabra){
@@ -69,7 +70,7 @@ function crearArrayPalabra(palabra){
     arrayPalabra = separada;
 }
 //--------asigna la funcionalidad a los botones de inicio y reinicio
-btnIniciar.addEventListener("click",function(event){
+startGameBtn.addEventListener("click",function(event){
     event.preventDefault();
     pincel.clearRect(0, 0, pantalla.width, pantalla.height);
     iniciarJuego();
@@ -82,32 +83,32 @@ btnReiniciar.addEventListener("click",function(event){
 //--------permite al usuario agregar sus propias palabras
 btnAgregarPalabra.addEventListener("click",function(event){
     event.preventDefault();
-    palabrasSecretas.push(inputPalabra.value.toUpperCase());
-    inputPalabra.value = "";
-    inputPalabra.focus();
+    palabrasSecretas.push(addWordInput.value.toUpperCase());
+    addWordInput.value = "";
+    addWordInput.focus();
 })
 //--------nuclea las acciones necesarias para iniciar un nuevo juego
 function iniciarJuego(){
     pincel.clearRect(0, 0, pantalla.width, pantalla.height);
     patibulo();
     sortearPalabra();
-    crearArrayPalabra(palabraSorteada);
+    crearArrayPalabra(randomAuthor);
     dibujarGuiones();
     cribarLetrasRepetidas();
-    juegoIniciado = true;
+    initGame = true;
     arrayLetraIngresada = [];
     arrayLetrasCorrectas = [];
     arrayLetrasIncorrectas = [];
 }
-//--------genera un array con los indices de las letras ingresadas 
+//--------genera un array con los indexes de las letras ingresadas 
 //--------por los usuarios, esto permite que si hay letras repetidas
 //--------dentro de la palabra original pueda dibujar todas
 //--------las instancias de esa letra
-function buscarIndices(){
-    if (juegoIniciado){
+function buscarindexes(){
+    if (initGame){
     var indiceBuscado = arrayPalabra.indexOf(arrayLetraIngresada[0]);
         while (indiceBuscado != -1) { //el -1 es el return de indexOf si no encuentra el elemento
-            indices.push(indiceBuscado);
+            indexes.push(indiceBuscado);
             indiceBuscado = arrayPalabra.indexOf(arrayLetraIngresada[0], indiceBuscado + 1);
   }
 }
@@ -117,7 +118,7 @@ function dibujarGuiones(){
     var inicioX = 350;
     var inicioY = 610;
     var contador = 0;
-    var nLetras = palabraSorteada.length;
+    var nLetras = randomAuthor.length;
     while (contador<nLetras){
         pincel.fillStyle = "red";
         pincel.fillRect(inicioX+(40*contador),inicioY,30,4);
@@ -133,7 +134,7 @@ function dibujarletras(arrOrden){
             pincel.font = "20px Georgia";
             pincel.fillText(arrayLetraIngresada[0],inicioX+(40*arrOrden[i]),inicioY);
         }
-        indices = [];
+        indexes = [];
 }
 //--------evento para capturar las teclas del usuario, en el cual
 //--------comprueba si son letras y no caracteres especiales o numeros
@@ -145,11 +146,11 @@ document.addEventListener("keyup", function(event){
     arrayLetraIngresada = [];
     var letra = event.key.toUpperCase();
     var codigo = letra.charCodeAt();
-    if (juegoIniciado){
+    if (initGame){
     if(codigo>64 && codigo<91){
         arrayLetraIngresada.push(letra);
-        buscarIndices();
-        dibujarletras(indices);
+        buscarindexes();
+        dibujarletras(indexes);
         var comparador = arrayLetrasIncorrectas.length;
         if(arrayPalabra.includes(letra)){
             if(!arrayLetrasCorrectas.includes(letra)){
@@ -183,7 +184,7 @@ function verificarFinGanador(){
         pincel.fillStyle = "lightgreen";
         pincel.font = "50px Georgia";
         pincel.fillText("Ganaste, felicidades!",600,400);
-        juegoIniciado = false;
+        initGame = false;
         btnReiniciar.focus();
         letrasUnicas = [];
     }
@@ -194,8 +195,8 @@ function verificarFinPerdedor(){
         pincel.fillStyle = "red";
         pincel.font = "50px Georgia";
         pincel.fillText("Fin del juego!",600,400);
-        juegoIniciado = false;
-        alert("la palabra era " + palabraSorteada);
+        initGame = false;
+        alert("la palabra era " + randomAuthor);
         btnReiniciar.focus();
         letrasUnicas = [];
     }

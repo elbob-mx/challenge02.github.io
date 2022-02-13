@@ -158,8 +158,11 @@ footer {
   font-family: "Port Lligat Slab", serif;
   color: goldenrod;
   text-align: center;
-  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 96%;
   padding-bottom: 10px;
+  max-width: 100%;
+  position: relative;
+  /* position: fixed; */
+  bottom: 0;
 } 
