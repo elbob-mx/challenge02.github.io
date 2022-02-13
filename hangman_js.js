@@ -31,87 +31,91 @@ var authorsArr = [
   "BROWN"
 ];
 console.log(authorsArr.length);
-console.log(authorsArr[0]);
+// console.log(authorsArr[0]);
 
 
 // VARIABLES --------------------------->
 
+// CONSTANTES ------------->
 
 // obtener palabra random del array y separar por letra
 const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
-let randomWord = getRandomWord.split("");
-
+const randomWord = getRandomWord.split("");
 console.log(getRandomWord);
 console.log(randomWord);
 
-const wrongLetters = document.getElementById("wrong-letters");
-const popup = document.getElementById("popup-container");
-const notif = document.getElementById("warning-letter");
-const finalPhrase = document.getElementById("frase-final");
-const letrasAciertos= [];
-const letrasErrores = [];
-
-// const loadBodyparts
+// const loadImages
 
 
 
-// crear espacios por letra de la palabra randome seleccionada
-
+// crear espacios por letra de la palabra random seleccionada
 
 var answerArr = [];
 for (var i = 0; i < randomWord.length; i++) {
   answerArr[i] = "_";
+  // document.write(answerArr);
 }
+console.log(answerArr);
 
 var missingLetters = randomWord.length;
+console.log(missingLetters);
 
+// aciertos y errores
 
-// FUNCIONES ---------------------------> <=
+const letrasAciertos= [];
+const letrasErrores = [];
+
+// FUNCIONES ------------------------------------->
 
 // agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos
-
-
 function addTo() {
   // authorsArr.push(document.getElementById("addWords").value);
-  let userAuthor = addWords.value
-  let upperCaseAuthor = userAuthor.toUpperCase();
-  let regexAuthor = upperCaseAuthor.replace(/[^a-zA-Z]/g, "");
-  let regexNumbers = regexAuthor.replace(/[0-9]/g, '')
+  var userAuthor = addWords.value
+  var upperCaseAuthor = userAuthor.toUpperCase();
+  var regexAuthor = upperCaseAuthor.replace(/[^a-zA-Z]/g, '');
+  var regexNumbers = regexAuthor.replace(/[0-9]/g, '');
   document.getElementById("addWords").innerHTML = regexNumbers;
   authorsArr.push(regexNumbers);
 
-  console.log(authorsArr); //confirmación
-  console.log(upperCaseAuthor);
-  console.log(regexAuthor);
-  console.log(regexNumbers);
-}
-// letras por adivinar
-
-function displayAuthor() {
-  randomWord.map(
-    letter =>
-  <span class="letter">
-  ${letrasAciertos.includes(letter) ? letter : ""}
-  </span>  
-  )
-.join("");
-
-const innerWord = getRandomWord.innerText.replace(/\n/g,"");
-
-if(innerWord === randomWord) {
-  finalPhrase.innerText = /*"frase autor"*/
-}
+  console.log(authorsArr); //confirmación existencia de array principal
+  console.log(upperCaseAuthor); // convertir a mayúsculas
+  console.log(regexAuthor); //confirmación palabra seleccionada del array
+  console.log(regexNumbers); //confirmación separado por letras
 }
 
-// crear espacios para letras ------>
+
+// letras por adivinar --------------------------->
+
+// 
+
+// actualizar letras erróneas
+
+// function actLetrasErrores() {
+//   // mostrar letras mal
+//   wrongLetters.innerHTML = `
+//   ${wrongLetters.length > 0 ? "<p>error!</p>" : ''}
+//   ${wrongLetters.map(letter => `<span>${letter}</span>)`)}
+//   `;
+// }
+
+// uso de teclado ------------------------------->
 
 
 
-// botón iniciar juego ------->
+  // espacios vacíos letras --------------------->
 
+// frases ganadoras ----------------------------->
 
+// const innerWord = regexNumbers.innerText.replace(/\n/g, '');
 
-// frases ganadoras -------->
+//   if (innerWord === regexNumbers){
+//     if(finalPhrase.innerText) {
+//       if(getRandomWord == [0]) {
+//         alert("El secreto de la sabiduría, del poder y del conocimiento es la humildad");
+//         // popup.style.display= 'flex';
+//       }
+//     } 
+//   }
 
 // if (/* ACIERTA */) { alert
 //   else if (

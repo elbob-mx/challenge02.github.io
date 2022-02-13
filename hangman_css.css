@@ -56,7 +56,18 @@ h5 {
   width: auto;
 }
 
-#used-letter {
+h6 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin: 1px 0 0 0;
+  padding-bottom: 0;
+  width: auto;
+}
+
+.wrongLetters {
   font-family: "Port Lligat Slab", serif;
   font-size: 16px;
   text-align: center;
@@ -64,14 +75,6 @@ h5 {
   margin: auto;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
-}
-
-#used-letter p{
-  margin: 0;
-}
-
-#used-letter.show{
-  transform: translateY(-50%);
 }
 
 p {
@@ -101,7 +104,7 @@ p {
   width: 450px;
 }
 
-.wrong-letters-container {
+.wrongletters {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -110,20 +113,12 @@ p {
   text-align: right;
 }
 
-.wrong-letters-container p {
+.wrongletters p {
   margin: 0 0 5px;
 }
 
-.wrong-letters-container span {
+.cont-wrong-letters span {
   font-size: 21px;
-}
-
-.authorToGuess {
-  display: flex;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .letter {
@@ -135,44 +130,6 @@ p {
   margin: 0 3px;
   height: 30px;
   width: 15px;
-}
-
-.popup-container {
-  background-color: rgba(0,0,0,0.3);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  justify-content: center;
-}
-
-.popup {
-  background-color: lightgray;
-  border-radius: 5px;
-  box-shadow: 0 15px 10px 3px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-}
-
-.popup button{
-  cursor: pointer;
-  background-color: whitesmoke;
-  color: black;
-  border: 0;
-  margin-top: 20px;
-  padding: 12px;
-  font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.popup button:active{
-  transform: scale(0.98);
-}
-
-.popup button:focus{
-  outline: 0;
 }
 
 label {
