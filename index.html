@@ -1,23 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Port+Lligat+Slab&family=Stint+Ultra+Expanded&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hangman_css.css" />
+    <title>El Ahorcado</title>
+  </head>
+
+
+  <body>
+</html>
+
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="hangman_css.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="hangman_css.css" />
 </head>
 
 <body>
   <header class="pad-1">
-    <h1 class="t-center"> Hangman </h1>
+    <h1 class="t-center">Hangman</h1>
   </header>
   <main>
     <div class="explanation-container">
-      <p id="threshold" class="t-center"> You can only have 6 mistakes to guess the word. Good luck! </p>
+      <p id="threshold" class="t-center">
+        You can only have 6 mistakes to guess the word. Good luck!
+      </p>
     </div>
-    <div id="manContainer" class="man-container"> </div>
-    <div id="guessContainer" class="guess-container flex-row flex-center mt-2"></div>
+    <div id="manContainer" class="man-container"></div>
+    <div
+      id="guessContainer"
+      class="guess-container flex-row flex-center mt-2"
+    ></div>
     <div id="responseContainer" class="response-container t-center"></div>
-    <div id="letterGuessedContainer" class="letters-used-container flex-row flex-center"></div>
-    <div class="reset-container flex-row flex-center"> <button id="reset"> Reset!</button> </div>
+    <div
+      id="letterGuessedContainer"
+      class="letters-used-container flex-row flex-center"
+    ></div>
+    <div class="reset-container flex-row flex-center">
+      <button id="reset">Reset!</button>
+    </div>
   </main>
   <script defer type="text/javascript" src="hangman_js.js"></script>
 </body>
