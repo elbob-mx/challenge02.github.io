@@ -1,4 +1,4 @@
-var words = [
+var authorArr = [
   "HEMINGWAY",
   "BEAUVOIR",
   "HOSSEINI",
@@ -27,7 +27,14 @@ var words = [
   "JEMISIN",
   "BROWN"
 ];
-let word = selectRandomWord();
+var getRandomAuthor = ;
+
+function eligeUnaFrutaAlAzar() {
+  var frutaAlAzar= frutas[Math.floor(Math.random() * frutas.length)];
+	return frutaAlAzar;
+}
+
+
 const guessContainer = document.getElementById("guessContainer");
 const manContainer = document.getElementById("manContainer");
 const responseContainer = document.getElementById("responseContainer");

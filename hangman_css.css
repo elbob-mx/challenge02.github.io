@@ -1,136 +1,24 @@
-:root {
-  --font: "Ubuntu Mono", monospace;
-  --pink: #edafb8ff;
-  --white: #ffffffff;
-  --black: #2e3638ff;
-  --light-grey: #dee2e3ff;
-  --grey: #5a6668ff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  color: var(--black);
-  font-family: var(--font);
-}
-
-input,
-button {
-  font-family: inherit;
+html {
+  background-color: black;
+  background: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
-  font-weight: 700;
-  padding: 0.5rem;
-}
-
-main > div {
-  padding: 1rem 0;
-}
-
-.man-container {
-  position: relative;
-}
-
-.man-container > div {
-  position: absolute;
-  top: 0;
-  border: 1px solid #000;
-
-  left: 50%;
-  right: 50%;
-}
-
-.man-container .head {
-  border-width: 2px;
-  width: 20px;
-  border-radius: 50%;
-  height: 20px;
-}
-
-.body {
-  margin-left: 10px;
-  height: 32px;
-  margin-top: 20px;
-}
-
-.left-arm {
-  width: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.right-arm {
-  width: 20px;
-  margin-top: 30px;
-  margin-left: -10px;
-}
-
-.left-leg {
-  width: 25px;
-  margin-top: 60px;
-  margin-left: 7px;
-  transform: rotate(45deg);
-}
-
-.right-leg {
-  width: 25px;
-  margin-top: 60px;
-  margin-left: -10px;
-  transform: rotate(-45deg);
-}
-
-input[type="text"] {
-  border: none;
-  border-bottom: 3px solid var(--grey);
-  font-size: 1.1rem;
-  width: 2rem;
-  margin: 1rem;
-  padding: 1rem 0.5rem;
-}
-
-.letters-used-container p {
-  padding: 0 0.5rem;
-}
-
-#reset {
-  background-color: var(--black);
-  color: #fff;
-  font-size: 1.2rem;
-  border: 3px solid var(--grey);
-  padding: 1rem 0.5rem;
-}
-
-.flex-row {
-  display: flex;
-}
-
-.pad-1 {
-  padding: 1rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
-.t-center {
+  font-family: 'Stint Ultra Expanded', cursive;
+  color: whitesmoke;
   text-align: center;
+  font-size: 5vh;
+  margin: 20px auto;
 }
 
-.fail {
-  color: red;
-}
-
-.win {
-  color: green;
+h2 {
+  font-family: 'Stint Ultra Expanded', cursive;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2vh;
+  margin: 2px auto
 }
