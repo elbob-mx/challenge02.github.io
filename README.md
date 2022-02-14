@@ -7,7 +7,7 @@ Considerando las letras se crean los espacios, donde el usuario debe adivinar la
 Si el usuario logra adivinar la palabra aparecerá una frase del autor que le haya tocado. Si falla, se alertará de ello y podrá reiniciar si así lo decide.
 
 Gracias a todos los involucrados y gracias a Alura LATAM por la oportunidad.
-A Laura por siempre escucharme en mis momentos de frustración y éxito!
+A Laura por arreglarlo ❤️ (TU ERES LA DE LA LÓGICA)!!
 
 //
 
@@ -20,4 +20,4 @@ Considering the letters, the spaces are created, where the user must guess the c
 If the user manages to guess the word, a phrase from the given author will appear. If it fails, it will be alerted from it and will be able to restart.
 
 Thanks to all those involved and thanks to Alura LatAm for the opportunity.
-Thank you Laura for listening to me in my moments of frustration and success!!
+Thank you Laura for fixing it ❤️ (YOU'RE THE LOGIC WIZ)!!
