@@ -1,4 +1,4 @@
-var pantalla = document.querySelector("#ahorcado");
+var pantalla = document.querySelector("#hangman");
 var stroke = pantalla.getContext("2d");
 
 
