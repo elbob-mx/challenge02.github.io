@@ -36,7 +36,7 @@ console.log(authorArr);
 var startGameBtn = document.querySelector("#startGameBtn");
 var addWordInput = document.querySelector("#addWordInput");
 var addWordBtn = document.querySelector("#addWordBtn");
-var resetButton = document.querySelector("#reset-button");
+var resetButton = document.querySelector("#resetButton");
 
 var initGame = false;
 var randomAuthor;
@@ -196,20 +196,20 @@ function checkWinner() {
         stroke.font = "40px Courier New";
         stroke.fillText("NERD!",600,400);
         initGame = false;
-        reset-button?.focus();
+        resetButton?.focus();
         soloLetters = [];
     }
 }
 // situación perdedor ---------------------->
 function checkFail(){
     if(wrongLetterArr.length>5) {
-        stroke.fillStyle = "tomato";
-        stroke.font = "40px Courier New";
-        stroke.fillText("Hay que leer más...",600,400);
-        initGame = false;
-        alert("la palabra era " + randomAuthor);
-        reset-button?.focus();
-        soloLetters = [];
+      stroke.fillStyle = "tomato";
+      stroke.font = "40px Courier New";
+      stroke.fillText("Hay que leer más...",600,400);
+      initGame = false;
+      resetButton?.focus();
+      alert("la palabra era " + randomAuthor);
+      soloLetters = [];
     }
 }
 
