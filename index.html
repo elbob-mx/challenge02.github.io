@@ -54,14 +54,24 @@
       
       <button id="startGameBtn">iniciar juego</button>
     </div>
-    <!-- mono -->
+    <br>
+    <!-- ahorcado -->
+
+    <div style="text-align:center">
+      <input onkeypress="return /[A-Z]/i.test(event.key)" maxlength="16" class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+    </div>
+
+    <div style="text-align:center;">
+      <canvas id="ahorcado" height="800px" width="1200px"></canvas>
+    </div>
 
     <!-- letras usadas error -->
 
     <!-- letras por adivinar encontradas -->
-    <div class="container"></div>
+    <!-- <div class="container"></div> -->
     <div class="resetBtnArea">
-      <button id="reset-button">reiniciar</button>
+      <button id="resetButton">reiniciar</button>
     </div>
     <br>
 
@@ -83,6 +93,7 @@
 
     <!-- js script area -->  
     <script defer type="text/javascript" src="hangman_js.js"></script>
+    <script defer type="text/javascript" src="canvas_JS.js"></script>
     <!-- js script area -->
   </body>
 

@@ -84,6 +84,18 @@ h3{
 	transition: all 0.4s ease 0s;
 }
 
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
 #startGameBtn {
   display: absolute;
   justify-content: center;
@@ -130,7 +142,7 @@ h3{
   margin: 8px 20px 30px auto;
 }
 
-#reset-button {
+#resetButton {
 	color: black;
   font-family: "Port Lligat Slab", serif;
 	text-decoration: none;
@@ -142,7 +154,7 @@ h3{
 	transition: all 0.4s ease 0s;
 }
 
-#reset-button:hover {
+#resetButton:hover {
   color: black;
   background: orangered;
   font-family: "Port Lligat Slab", serif;
