@@ -80,7 +80,7 @@ startGameBtn.addEventListener("click",function(event) {
     playGame();
 })
 
-resetButton.addEventListener("click",function(event) {
+resetButton?.addEventListener("click",function(event) {
     event.preventDefault();
     stroke.clearRect(0, 0, screen.width, screen.height);
     playGame();
@@ -196,7 +196,7 @@ function checkWinner() {
         stroke.font = "40px Courier New";
         stroke.fillText("NERD!",600,400);
         initGame = false;
-        reset-button.focus();
+        reset-button?.focus();
         soloLetters = [];
     }
 }
@@ -208,7 +208,7 @@ function checkFail(){
         stroke.fillText("Hay que leer más...",600,400);
         initGame = false;
         alert("la palabra era " + randomAuthor);
-        reset-button.focus();
+        reset-button?.focus();
         soloLetters = [];
     }
 }
