@@ -1,0 +1,235 @@
+body,
+html {
+  background-image: url("https://i.ibb.co/ryX3RqH/Blackboard-Background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 4.5vw;
+  text-align: center;
+  letter-spacing: 20px;
+  color: whitesmoke;
+  margin: 30px 0 0 0;
+  padding-bottom: 0;
+  width: auto;
+}
+
+h3 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 2.75vw;
+  text-align: center;
+  letter-spacing: 20px;
+  color: whitesmoke;
+  margin: 30px 0 0 0;
+  padding-bottom: 0;
+  width: auto;
+}
+
+h4 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 2.2vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 2px 0 20px 0;
+  width: auto;
+  letter-spacing: 1.5px;
+}
+
+h5 {
+  font-family: "Stint Ultra Expanded", cursive;
+  font-size: 0.6rem;
+  text-align: center;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin: 1px 0 0 0;
+  padding-bottom: 0;
+  width: auto;
+}
+
+p {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 6.5vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.title {
+  width: auto;
+  margin: auto;
+}
+
+.container {
+  justify-content: center;
+  /* width: auto; */
+  margin: 55px auto;
+}
+
+#gameSlot{
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  font-family: "Port Lligat Slab", serif;
+  font-size: 14pt;
+  color: whitesmoke;
+  /* font-size: 2vw; */
+}
+
+#addWords {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 35px;
+  margin: 7px auto;
+  font-family: "Port Lligat Slab", serif;
+  font-size: 14pt;
+  font-weight: 500;
+  /* font-size: 2vw; */
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#addWordsBtn {
+  display: flex;
+  width: auto;
+  margin: 20px auto;
+  background: none;
+  border: solid #d3d300 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 16pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px 10px 10px 10px;
+  color: #d3d300;
+}
+
+#addWordsBtn:hover {
+  display: flex;
+  width: auto;
+  margin: 20px auto;
+  background: none;
+  border: solid yellow 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 16pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 12px 12px 12px 12px;
+  color: yellow;
+}
+
+#startGame {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid #d3d300 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px 10px 10px 10px;
+  color: #d3d300;
+}
+
+#startGame:hover {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid yellow 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 13px 13px 13px 13px;
+  color: yellow;
+}
+
+#resetGame {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid orangered 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 10px 10px 10px 10px;
+  color: orangered;
+}
+
+#resetGame:hover {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+  background: none;
+  border: solid orange 2pt;
+  border-radius: 7px;
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  font-size: 18pt;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  white-space: nowrap;
+  padding: 13px 13px 13px 13px;
+  color: orange;
+}
+
+footer {
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 500;
+  text-align: center;
+  color: darkgoldenrod;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
