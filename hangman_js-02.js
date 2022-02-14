@@ -28,12 +28,12 @@ var authorArr = [
   "BROWN"
 ];
 console.log(authorArr);
-// console.log(authorsArr.length);
-// console.log(authorsArr[0]);
+console.log(authorsArr.length);
+console.log(authorsArr[0]);
 
-//
 
-/* obtener palabra random del array y separar por letra
+/* obtener palabra random del array y separar por letra ------------------->
+
 const getRandomWord = authorsArr[Math.floor(Math.random() * authorsArr.length)];
 let randomWord = getRandomWord.split("");
 
@@ -43,8 +43,7 @@ console.log(randomWord);
 var author = document.getElementById('randomWord');
 
 
-// crear espacios por letra de la palabra randome seleccionada
-
+// crear espacios por letra de la palabra randome seleccionada ----------------->
 
 var answerArr = [];
 for (var i = 0; i < randomWord.length; i++) {
@@ -56,7 +55,7 @@ var missingLetters = randomWord.length;
 
 // FUNCIONES --------------------------->
 
-// agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos
+// agregar palabra al array por parte del usuario introducida usando el input, filtrando numeros y simbolos ------>
 
 
 function addTo() {
@@ -74,14 +73,9 @@ function addTo() {
   console.log(regexNumbers);
 }
 
-
-// crear espacios para letras ------>
-
-
-
-// botón iniciar juego -------> */
+*/
  
-====================================================================================== //
+// ======================**********************======================================== //
 
 // VARIABLES ======================>
 
@@ -161,14 +155,15 @@ function playGame() {
 }
 
 
-//--------genera un array con los indexes de las letras ingresadas 
-//--------por los usuarios, esto permite que si hay letras repetidas
-//--------dentro de la palabra original pueda dibujar todas
-//--------las instancias de esa letra
+/*  genera un array con los indexes de las letras ingresadas
+por los usuarios, esto permite que si hay letras repetidas
+dentro de la palabra original pueda dibujar todas
+las instancias de esa letra  */
+
 function searchIndexes() {
     if (initGame){
     var indexSeek = tempArray.indexOf(userLetterArr[0]);
-        while (indexSeek != -1) { //el -1 es el return de indexOf si no encuentra el elemento
+        while (indexSeek != -1) { // -1 si no encuentra índice
             indexes.push(indexSeek);
             indexSeek = tempArray.indexOf(userLetterArr[0], indexSeek + 1);
     }
@@ -199,8 +194,10 @@ function printLetters(orderArr) {
         indexes = [];
 }
 
-/* evento para capturar las teclas del usuario, en el cual comprueba si son letras y no caracteres especiales o numeros almacena las letras en uno de dos arrays, de acuerdo a si la letra esta o no dentro de la palabra sorteada.
-tambien dibuja la pieza del ahorcado en caso de que sea necesario y comprueba si el juego ha terminado */
+/* capturar teclas del usuario, comprueba sean letras y chars especiales o números y
+almacena las letras en uno de dos arrays,
+si la letra esta o no en la palabra seleccionada.
+dibuja las piezas de la horca y revisa si el juego terminó */
 
 document.addEventListener("keyup", function(event) {
     userLetterArr = [];
@@ -400,10 +397,10 @@ function printGallow(){
 
 // world domination plan ---------------->
 
-/* buscar y declarar random en el arreglo 'words',
+/* buscar y declarar random en el arreglo 'authorArr',
 buscar letra dentro de la palabra,
 si está, se imprime
 definir lugar de la letra,
-si no, alert "intenta de nuevo" y dibujar parte del mono
-depues de 'equis' intentos, game over
-si se complete la palabra, alert 'FRASE ESCRITOR' */
+si no, se imprime en canvas y dibuja parte del mono
+depues de '5' intentos, game over
+si se completa la palabra, alert 'FRASE ESCRITOR' */
